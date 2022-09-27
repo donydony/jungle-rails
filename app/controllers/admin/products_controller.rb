@@ -1,5 +1,5 @@
 class Admin::ProductsController < ApplicationController
-  http_basic_authenticate_with name: Rails.configuration.admin_products[:user_name], password: Rails.configuration.admin_products[:password]
+  #http_basic_authenticate_with name: Rails.configuration.admin_products[:user_name], password: Rails.configuration.admin_products[:password]
   def index
     @products = Product.order(id: :desc).all
   end

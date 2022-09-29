@@ -38,3 +38,8 @@ In order to run the app in testing mode, start the server with test env variable
 
 ## Screenshots
 
+!["Screenshot of Homepage"](https://github.com/donydony/jungle-rails/blob/master/docs/Homepage.PNG)
+
+!["Screenshot of Registration Screen"](https://github.com/donydony/jungle-rails/blob/master/docs/Register.PNG)
+
+!["Screenshot of Admin Dashboard"](https://github.com/donydony/jungle-rails/blob/master/docs/Admin%20Dashboard.PNG)

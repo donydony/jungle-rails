@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       redirect_to '/register'
     end
   end
-
+  
   private
   def user_params
     params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)

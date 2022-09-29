@@ -5,7 +5,7 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 ## Setup
 
 1. Run `bundle install` to install dependencies
-2. Create `config/database.yml` by copying `config/database.example.yml`
+2. Create `config/database.yml` by copying `config/database.example.yml` (make sure postgres is running and may need to create development role with development as password)
 3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
 4. Run `bin/rails db:reset` to create, load and seed db
 5. Create .env file based on .env.example
@@ -19,6 +19,8 @@ If Rails is complaining about authentication to the database, uncomment the user
 
 ## Stripe Testing
 
+To obtain Stripe keys, register for a Stripe account and find your own publishable and secret keys on your profile (for dev section).
+
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
@@ -29,3 +31,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Testing
+
+In order to run the app in testing mode, start the server with test env variable: 'bin/rails s -b 0.0.0.0 -e test'
+
+## Screenshots
+
